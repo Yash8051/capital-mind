@@ -151,23 +151,3 @@ export const AGENT_DISPLAY_NAMES: Record<string, string> = {
   "risk-assessment": "Risk Assessment Agent",
   "investment-committee": "Investment Committee",
 };
-
-/**
- * Agent icons (Lucide icon names)
- */
-export const AGENT_ICONS: Record<string, string> = {
-  supervisor: "Brain",
-  "company-research": "Building2",
-  "financial-analyst": "TrendingUp",
-  "news-sentiment": "Newspaper",
-  "competitor-analysis": "Users",
-  "risk-assessment": "ShieldAlert",
-  "investment-committee": "Gavel",
-};
-
-/**
- * Delay utility for animations
- */
-export function delay(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}

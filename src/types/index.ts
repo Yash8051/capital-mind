@@ -226,6 +226,7 @@ export interface AnalysisState {
   riskAssessment: RiskAssessmentResult | null;
   investmentDecision: InvestmentDecision | null;
   error: string | null;
+  rawQuote?: any | null;
 }
 
 // ── SSE Event Types ─────────────────────────────────────────
