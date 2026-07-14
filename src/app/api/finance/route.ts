@@ -45,7 +45,7 @@ export async function POST(request: Request) {
       return isCurrency ? `$${num.toFixed(2)}` : `${num.toFixed(2)}${suffix}`;
     };
 
-    const fd = summary?.financialData || {};
+    const fd = (summary?.financialData || {}) as any;
 
     const metrics = {
       price: quote.regularMarketPrice?.toFixed(2) || "N/A",
