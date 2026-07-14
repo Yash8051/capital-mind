@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import {
   Search, Eye, AlertTriangle, CheckCircle2, ChevronDown, ChevronUp, Sparkles,
   Activity, ArrowRight, Globe, Clock, ArrowUpRight, ArrowDownRight, Zap, CheckCircle,
-  Code, LayoutDashboard, Info, Moon, Sun, ShieldCheck, Database, FileText, Target, BrainCircuit, X
+  Code, Github, LayoutDashboard, Info, Moon, Sun, ShieldCheck, Database, FileText, Target, BrainCircuit, X
 } from "lucide-react";
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer
@@ -204,7 +204,14 @@ export default function ResearchPage() {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--text-secondary)]">
             <span onClick={() => setActiveModal('features')} className="hover:text-[var(--text-primary)] transition-colors cursor-pointer">Features</span>
             <span onClick={() => setActiveModal('how-it-works')} className="hover:text-[var(--text-primary)] transition-colors cursor-pointer">How It Works</span>
-            <span className="hover:text-[var(--text-primary)] transition-colors cursor-pointer flex items-center gap-1"><Code className="w-4 h-4"/> GitHub</span>
+            <a
+              href="https://github.com/Yash8051/capital-mind"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[var(--text-primary)] transition-colors cursor-pointer flex items-center gap-1"
+            >
+              <Github className="w-4 h-4" /> GitHub
+            </a>
             <button onClick={() => setIsDarkMode(!isDarkMode)} className="hover:text-[var(--text-primary)] transition-colors cursor-pointer p-1.5 rounded-md hover:bg-[var(--text-primary)]/5">{isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}</button>
           </div>
         </div>

@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Brain, BarChart3, ExternalLink } from "lucide-react";
+import { Brain, BarChart3, Github } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 
@@ -61,12 +61,12 @@ export function Navbar() {
         {/* Actions */}
         <div className="flex items-center gap-2">
           <a
-            href="https://github.com"
+            href="https://github.com/Yash8051/capital-mind"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-500 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
           >
-            <ExternalLink className="h-4 w-4" />
+            <Github className="h-4 w-4" />
           </a>
           <ThemeToggle />
           <Link
